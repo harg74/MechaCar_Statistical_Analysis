@@ -9,7 +9,7 @@ Using our knowledge of R, we designed a a linear model that predicts the Miles p
 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-    Given the used_vehicles dataset vehicle lenght and ground clearance variables have a significant impact on the miles per gallon (mpg) consumed by each car. On the other hand, the Intercept is also statistically significant, meaning that the explains a significant amount of variability in the **dependent variable** when all **independent variables** are equal to zero.
+    Given the used_vehicles dataset vehicle lenght and ground clearance variables have a significant impact on the miles per gallon (mpg) consumed by each car. On the other hand, the Intercept is also statistically significant, meaning that it explains a significant amount of variability in the **dependent variable** when all **independent variables** are equal to zero.
     
 ![del1](https://user-images.githubusercontent.com/78564912/147985879-762599a4-fe01-4bbb-a2e0-b27306b65544.png)
 
