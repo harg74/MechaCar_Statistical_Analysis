@@ -74,3 +74,25 @@ For Lot 3, our p-value, is greater than our significance level of 0.05 with 0.71
 
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
+
+In order to conduct our statistical study on how MechaCar performs against the competition. We would use some variables of interest to the consumer. For example, cost, city or highway fuel efficiency, horse power, maintenance cost and safety rating.
+
+I would first test my data to be normally distributed. This can be done by adding our ggplot object to geom_density() function or by applying the shapiro.test()function to our dataset variable. Where if the p-value of this shapiro test function is greater than 0.05 (our significance level) the data would be considered normally distributed. If the distributions happens to be non- normally distributed, depending on the severity:
+
+- If dataset is large, or the skewness is very subtle: we would simply point out that our data distribution shows signs of skew during the reporting.
+- If dataset is smaller, or the skewness does impactthe overall shape of our distribution
+  - Add more data points to our dataset to alleviate the effect of skew
+  - Resample or regenerate the data
+  - Transform our data values by normalization, using another numerical variable, or by transforming the data using an operator(natural log, or log10)
+
+It is important to generate our Ho and Ha hypothesis and our significance level. This is because the Ho, generally, is the hypothesis that can be exaplained by random chance and then, is the one that tipically we want to reject. Alternatively, the Ha hypothesis, is the one that is influenced, generally, by non-random events. On the other hand, depending on the significance level the Ho would be rejected or fail to be rejected. Typically our significance level would be 0.05, but it can be set at 0.01 and 0.001 as well, depending on the importance of the questions we are asking.
+
+The test I would use is one sample t-test, which is is the one that stablish in the Ho if there is no statistical difference between the observed sample mean and its presumed population mean.
+
+So, the data needed to run this one sample t-test, is required that:
+
+- The input data is numerical and continuous
+- Sample data randombly selected
+- Data considered to be normally distributed
+- Sample reasonably large: (sample distrubution similar to the population ditribution
+- Similar data variance
