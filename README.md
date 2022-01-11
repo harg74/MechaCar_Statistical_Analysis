@@ -41,36 +41,29 @@ We define our null and alternative hypothesis:
 - Ha: There *is statistical difference* between the observed PSI sample and its presumed population mean of
 1500 PSI.
 
-Since our data is not considered to be normally distributed, we would need to normalize our values. In the image below we can observe that our dataset presents **_negative skew_** and is impacting the overall shape of the distribution. Hence, the transformation is needed. This is important because one of the assumptions to apply our t-test is that our population data and our sampling data are ~ normally distributed. The chart in the left side, is the one presenting the negative skew and the left chart is the one adjusted as "normally distributed".
-
-![del3_pop_skew](https://user-images.githubusercontent.com/78564912/147978386-aef8f6fb-6629-4792-a6c2-e1db35759e2d.png)![del3_pop_log10](https://user-images.githubusercontent.com/78564912/147986052-fba6b779-9d77-4406-944e-88a91990dc73.png)
-
-
-
 ### 1.	Mean Sample vs. Mean Population across all lots
-Once we have our data transformed we can apply our t.test() to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500. 
+After we defined our hypothesis we can apply our t.test() to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500. 
 
-We obtained a p-value = 0.4804, which is greater than our significance level of 0.05. This means that we fail to reject our Ho, and there is no statistical difference between the observed sample mean and it presumed population mean.
+We obtained a p-value = 0.06028, which is above of our significance level of 0.05. This means that we fail to reject our Ho, and there is no statistical difference between the observed sample mean and it presumed population mean.
 
-![t test](https://user-images.githubusercontent.com/78564912/147986286-d07b6ea6-bf5d-448a-a449-e6f3e0acfbc4.png)
+![all_lots](https://user-images.githubusercontent.com/78564912/148946064-c668d4f6-1986-4145-95a8-14d46e9608b7.png)
+
 
 ### 2. Mean Sample vs. Mean Population for each lot
 - **Lot 1 results:**
-After applying our t.test() function we can observe that our p-value, 2.482e-08, is way lower than our significance level 0.05. Therefore, we can conclude that we fail to reject our Ho and there is *no* statistical difference between the observed sample mean and it presumed population mean.
+After applying our t.test() function we can observe that our p-value, 1, is way greater than our significance level of 0.05. Therefore, we can conclude that we fail to reject our Ho and there is *no* statistical difference between the observed sample mean and it presumed population mean.
 
-![t test lot1](https://user-images.githubusercontent.com/78564912/147986315-b04521ee-26ed-4494-80ff-3d7bd59bd223.png)
-
+![lot1](https://user-images.githubusercontent.com/78564912/148946378-ed9b5e85-1d3e-4448-af09-65b85d36d1ca.png)
 
 - **Lot 2 results:**
-The same is true for Lot 2, we can observe that our p-value, 2. 0.01664-08, is way lower than our significance level 0.05. Therefore, we can conclude that we fail to reject our Ho and there is *no* statistical difference between the observed sample mean and it presumed population mean.
+The same is true for Lot 2, we can observe that our p-value, 0.6072, is above than our significance level 0.05. Therefore, we can conclude that we fail to reject our Ho and there is *no* statistical difference between the observed sample mean and it presumed population mean.
 
-![t test lot2](https://user-images.githubusercontent.com/78564912/147986318-792cc5b9-165f-43cd-b107-c584a42ae086.png)
-
+![lot2](https://user-images.githubusercontent.com/78564912/148947265-66bcd21e-a8a8-4c0e-887e-c4700aef0a1f.png)
 
 - **Lot 3 results:**
-For Lot 3, our p-value, is greater than our significance level of 0.05 with 0.714 and in this case, we would reject our Ho, concluding that there *is* statistical difference between the observed sample mean and it presumed population mean.
+For Lot 3, our p-value, is lower than our significance level of 0.05 with a valueo of 0.04168. In this case, we would reject our Ho, concluding that there *is* statistical difference between the observed sample mean and it presumed population mean.
 
-![t test lot3](https://user-images.githubusercontent.com/78564912/147986325-759781d1-06e2-4f23-b951-da35b67c68bc.png)
+![lot3](https://user-images.githubusercontent.com/78564912/148948581-bfc1be07-8fd6-4c7f-9617-b317f58b0ee5.png)
 
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
